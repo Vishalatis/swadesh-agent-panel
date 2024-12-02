@@ -1,0 +1,521 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html" charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, shrink-to-fit=no"
+    />
+
+    <meta
+      name="csrf-token"
+      content="CifXooQ99Ep5O2LiKJe7a8OLGOc0pfqCrqKECvJN"
+    />
+
+    <title>Swadesh-properties-agent</title>
+
+    <link rel="shortcut icon" type="image/png" href="assets/img/favicon.png" />
+
+    <link rel="stylesheet" href="assets/css/all.min.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://codecanyon8.kreativdev.com/estaty/assets/css/fontawesome-iconpicker.min.css"
+    />
+
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+
+    <link rel="stylesheet" href="assets/css/bootstrap-tagsinput.css" />
+
+    <link rel="stylesheet" href="assets/css/jquery-ui.min.css" />
+
+    <link rel="stylesheet" href="assets/css/jquery.timepicker.min.css" />
+
+    <link rel="stylesheet" href="assets/css/bootstrap-datepicker.min.css" />
+
+    <link rel="stylesheet" href="assets/css/dropzone.min.css" />
+
+    <link rel="stylesheet" href="assets/css/atlantis.css" />
+
+    <link rel="stylesheet" href="assets/css/select2.min.css" />
+
+    <link rel="stylesheet" href="assets/css/admin-main.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
+      integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+
+  <body data-background-color="white2">
+    <div class="request-loader">
+      <img src="assets/img/loader.gif" alt="loader" />
+    </div>
+
+    <div class="wrapper">
+      <div class="main-header">
+        <!-- Logo Header Start -->
+        <div class="logo-header" data-background-color="white">
+          <a href="dashboard.html" class="logo" target="_blank">
+            <img
+              src="assets/img/logo.png"
+              alt="logo"
+              class="navbar-brand"
+              width="120"
+            />
+          </a>
+
+          <button
+            class="navbar-toggler sidenav-toggler ml-auto"
+            type="button"
+            data-toggle="collapse"
+            data-target="collapse"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon">
+              <i class="fa-solid fa-bars"></i>
+            </span>
+          </button>
+          <button class="topbar-toggler more">
+            <i class="icon-options-vertical"></i>
+          </button>
+
+          <div class="nav-toggle">
+            <button class="btn btn-toggle toggle-sidebar">
+              <i class="fa-solid fa-bars"></i>
+            </button>
+          </div>
+        </div>
+        <!-- Logo Header End -->
+
+        <!-- Navbar Header Start -->
+        <nav
+          class="navbar navbar-header navbar-expand-lg"
+          data-background-color="white2"
+        >
+          <div class="container-fluid">
+            <ul class="navbar-nav topbar-nav ml-md-auto align-items-center">
+              <li class="nav-item dropdown hidden-caret">
+                <a
+                  class="dropdown-toggle profile-pic"
+                  data-toggle="dropdown"
+                  href="#"
+                  aria-expanded="false"
+                >
+                  <div class="avatar-sm">
+                    <img
+                      src="assets/img/agents/6669428f99932.png"
+                      alt="Vendor Image"
+                      class="avatar-img rounded-circle"
+                    />
+                  </div>
+                </a>
+
+                <ul class="dropdown-menu dropdown-user animated fadeIn">
+                  <div class="dropdown-user-scroll scrollbar-outer">
+                    <li>
+                      <div class="user-box">
+                        <div class="avatar-lg">
+                          <img
+                            src="assets/img/agents/6669428f99932.png"
+                            alt="Agent Image"
+                            class="avatar-img rounded-circle"
+                          />
+                        </div>
+
+                        <div class="u-text">
+                          <h4>rendall</h4>
+                          <p class="text-muted">alex _rendall@gmail.com</p>
+                        </div>
+                      </div>
+                    </li>
+
+                    <li>
+                      <div class="dropdown-divider"></div>
+                      <a class="dropdown-item" href="edit-profile.html">
+                        Edit Profile
+                      </a>
+
+                      <div class="dropdown-divider"></div>
+                      <a class="dropdown-item" href="change-password.html">
+                        Change Password
+                      </a>
+
+                      <div class="dropdown-divider"></div>
+                      <a class="dropdown-item" href="login.html"> Logout </a>
+                    </li>
+                  </div>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </nav>
+        <!-- Navbar Header End -->
+      </div>
+
+      <!-- Modal -->
+
+      <div class="sidebar sidebar-style-2" data-background-color="white">
+        <div class="sidebar-wrapper scrollbar scrollbar-inner">
+          <div class="sidebar-content">
+            <div class="user">
+              <div class="avatar-sm float-left mr-2">
+                <img
+                  src="assets/img/agents/6669428f99932.png"
+                  alt="Agent Image"
+                  class="avatar-img rounded-circle"
+                />
+              </div>
+
+              <div class="info">
+                <a
+                  data-toggle="collapse"
+                  href="#adminProfileMenu"
+                  aria-expanded="true"
+                >
+                  <span>
+                    rendall
+                    <span class="user-level">Agent</span>
+                    <span class="caret"></span>
+                  </span>
+                </a>
+
+                <div class="clearfix"></div>
+
+                <div class="collapse in" id="adminProfileMenu">
+                  <ul class="nav">
+                    <li>
+                      <a href="edit-profile.html">
+                        <span class="link-collapse">Edit Profile</span>
+                      </a>
+                    </li>
+
+                    <li>
+                      <a href="change-password.html">
+                        <span class="link-collapse">Change Password</span>
+                      </a>
+                    </li>
+
+                    <li>
+                      <a href="login.html">
+                        <span class="link-collapse">Logout</span>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <ul class="nav nav-primary">
+              <div class="row mb-3">
+                <div class="col-12">
+                  <form>
+                    <div class="form-group py-0">
+                      <input
+                        name="term"
+                        type="text"
+                        class="form-control sidebar-search ltr"
+                        placeholder="Search Menu Here..."
+                      />
+                    </div>
+                  </form>
+                </div>
+              </div>
+
+              <li class="nav-item">
+                <a href="dashboard.html">
+                  <i class="fa-solid fa-gauge"></i>
+                  <p>Dashboard</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a data-toggle="collapse" href="#propertyManagement">
+                  <i class="fal fa-home"></i>
+                  <p>Property Management</p>
+                  <span class="caret"></span>
+                </a>
+
+                <div id="propertyManagement" class="collapse">
+                  <ul class="nav nav-collapse">
+                    <li class="">
+                      <a href="add-property.html">
+                        <span class="sub-item">Add Property</span>
+                      </a>
+                    </li>
+
+                    <li class="">
+                      <a href="property-management.html">
+                        <span class="sub-item">Manage Properties</span>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+
+              <li class="nav-item">
+                <a href="messages.html">
+                  <i class="fa-regular fa-comment"></i>
+                  <p>Property Messages</p>
+                </a>
+              </li>
+
+              <li class="nav-item active">
+                <a data-toggle="collapse" href="#projectManagement">
+                  <i class="fal fa-city"></i>
+                  <p>Project Management</p>
+                  <span class="caret"></span>
+                </a>
+
+                <div id="projectManagement" class="collapse">
+                  <ul class="nav nav-collapse">
+                    <li class="">
+                      <a href="add-projects.html">
+                        <span class="sub-item">Add Project</span>
+                      </a>
+                    </li>
+
+                    <li class="">
+                      <a href="manage-projects.html">
+                        <span class="sub-item">Manage Projects</span>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+
+              <li class="nav-item">
+                <a href="edit-profile.html">
+                  <i class="fal fa-user-edit"></i>
+                  <p>Edit Profile</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="change-password.html">
+                  <i class="fal fa-key"></i>
+                  <p>Change Password</p>
+                </a>
+              </li>
+
+              <li class="nav-item">
+                <a href="login.html">
+                  <i class="fal fa-sign-out"></i>
+                  <p>Logout</p>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="main-panel">
+        <div class="content">
+          <div class="page-inner">
+            <div class="page-header">
+              <h4 class="page-title">Project</h4>
+              <ul class="breadcrumbs">
+                <li class="nav-home">
+                  <a href="dashboard.html">
+                    <i class="fa-solid fa-house"></i>
+                  </a>
+                </li>
+                <li class="separator">
+                  <i class="fa-solid fa-arrow-right"></i>
+                </li>
+                <li class="nav-item">
+                  <a href="#">Project Management</a>
+                </li>
+                <li class="separator">
+                  <i class="fa-solid fa-arrow-right"></i>
+                </li>
+                <li class="nav-item">
+                  <a href="#">Projects</a>
+                </li>
+              </ul>
+            </div>
+
+            <div class="row">
+              <div class="col-md-12">
+                <div class="card">
+                  <div class="card-header">
+                    <div class="row">
+                      <div class="col-lg-3">
+                        <div class="card-title d-inline-block">Projects</div>
+                      </div>
+
+                      <div class="col-lg-3">
+                        <form action="" method="get" id="carSearchForm">
+                          <div class="form-group">
+                            <input
+                              type="text"
+                              name="title"
+                              value=""
+                              class="form-control"
+                              placeholder="Title"
+                            />
+                          </div>
+                        </form>
+                      </div>
+                      <div class="col-lg-3">
+                        <div class="form-group">
+                          <select
+                            name="language"
+                            class="form-control"
+                            onchange="window.location='"
+                          >
+                            <option selected="" disabled="">
+                              Select a Language
+                            </option>
+                            <option value="en" selected="">English</option>
+                            <option value="ar">عربي</option>
+                          </select>
+                        </div>
+                      </div>
+                      <div class="col-lg-3 mt-2 mt-lg-0">
+                        <a
+                          href="add-projects.html"
+                          class="btn btn-primary btn-sm float-lg-right"
+                          ><i class="fa-solid fa-plus"></i>
+                          Add Project
+                        </a>
+
+                        <button
+                          class="btn btn-danger btn-sm float-lg-right mr-2 d-none bulk-delete"
+                          data-href=""
+                        >
+                          <i class="fa-solid fa-xmark"></i>
+                          Delete
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="card-body">
+                    <div class="row">
+                      <div class="col-lg-12">
+                        <h3 class="text-center">NO PROJECT FOUND!</h3>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="card-footer"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <footer class="footer py-4">
+          <div class="container-fluid">
+            <div class="d-block mx-auto">
+              <p>Copyright ©2024. All Rights Reserved.</p>
+              <p></p>
+            </div>
+          </div>
+        </footer>
+      </div>
+    </div>
+
+    <script>
+      "use strict";
+      const demo_mode = "active";
+      const baseUrl = "https://codecanyon8.kreativdev.com/estaty";
+    </script>
+
+    <script type="text/javascript" src="assets/js/jquery.min.js"></script>
+    <script type="text/javascript" src="assets/js/jquery-migrate.js"></script>
+    <script type="text/javascript" src="assets/js/popper.min.js"></script>
+    <script type="text/javascript" src="assets/js/bootstrap.min.js"></script>
+
+    <script type="text/javascript" src="assets/js/jquery-ui.min.js"></script>
+    <script
+      type="text/javascript"
+      src="assets/js/jquery.ui.touch-punch.min.js"
+    ></script>
+
+    <script
+      type="text/javascript"
+      src="assets/js/jquery.timepicker.min.js"
+    ></script>
+
+    <script
+      type="text/javascript"
+      src="assets/js/jquery.scrollbar.min.js"
+    ></script>
+
+    <script
+      type="text/javascript"
+      src="assets/js/bootstrap-notify.min.js"
+    ></script>
+
+    <script type="text/javascript" src="assets/js/sweet-alert.min.js"></script>
+
+    <script
+      type="text/javascript"
+      src="assets/js/bootstrap-tagsinput.min.js"
+    ></script>
+
+    <script
+      type="text/javascript"
+      src="assets/js/bootstrap-datepicker.min.js"
+    ></script>
+
+    <script type="text/javascript" src="assets/js/jscolor.min.js"></script>
+
+    <script
+      type="text/javascript"
+      src="assets/js/fontawesome-iconpicker.min.js"
+    ></script>
+
+    <script
+      type="text/javascript"
+      src="assets/js/datatables-1.10.23.min.js"
+    ></script>
+
+    <script
+      type="text/javascript"
+      src="assets/js/datatables.bootstrap4.min.js"
+    ></script>
+
+    <script src="assets/js/tinymce/js/tinymce/tinymce.min.js"></script>
+
+    <script type="text/javascript" src="assets/js/dropzone.min.js"></script>
+
+    <script type="text/javascript" src="assets/js/atlantis.js"></script>
+
+    <script type="text/javascript" src="assets/js/webfont.min.js"></script>
+
+    <script>
+      "use strict";
+      const account_status = "1";
+      const secret_login = "0";
+    </script>
+
+    <script type="text/javascript" src="assets/js/select2.min.js"></script>
+
+    <script type="text/javascript" src="assets/js/admin-partial.js"></script>
+    <script type="text/javascript" src="assets/js/admin-main.js"></script>
+
+    <script>
+      "use strict";
+      var labels =
+        "<div class='form-group'><input type='text' name='en_label[]' class='form-control' placeholder='Label (English)'></div><div class='form-group rtl text-right'><input type='text' name='ar_label[]' class='form-control' placeholder='Label (عربي)'></div>";
+      var values =
+        "<div class='form-group'><input type='text' name='en_value[]' class='form-control' placeholder='Value (English)'></div><div class='form-group rtl text-right'><input type='text' name='ar_value[]' class='form-control' placeholder='Value (عربي)'></div>";
+      var galleryStoreUrl = "agent/project-management/gallery-img-store";
+      var galleryRemoveUrl = "agent/project-management/img-remove";
+      var floorPlanStoreUrl = "agent/project-management/floor-plan-img-store";
+      var floorPlanRemoveUrl = "agent/project-management/floor-plan-img-remove";
+      var galleryImages = 999999;
+    </script>
+
+    <script
+      type="text/javascript"
+      src="assets/js/admin-project-dropzone.js"
+    ></script>
+  </body>
+</html>
